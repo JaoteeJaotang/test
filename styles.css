@@ -1,0 +1,155 @@
+/* ตั้งค่าเบื้องต้น */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Courier New', Courier, monospace; /* ฟอนต์ที่มีลักษณะเหมือนฟอนต์ยุคเก่า */
+    line-height: 1.6;
+    background: #f4f4f4; /* เปลี่ยนพื้นหลังเป็นสีอ่อน */
+    color: #333; /* เปลี่ยนตัวอักษรเป็นสีเทาเข้ม */
+    font-size: 16px;
+}
+
+header {
+    background: #e0e0e0; /* สีพื้นหลังของ header เป็นสีเทาอ่อน */
+    color: #007bff; /* สีตัวอักษรเป็นสีน้ำเงิน */
+    padding: 20px 0;
+    border-bottom: 3px solid #bbb; /* เส้นขอบที่ดูคล้ายเหล็ก */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2); /* เงาของ header */
+}
+
+header nav ul {
+    list-style-type: none;
+    text-align: center;
+}
+
+header nav ul li {
+    display: inline-block;
+    margin-right: 40px;
+}
+
+header nav ul li a {
+    color: #007bff; /* เปลี่ยนสีลิงก์เป็นสีน้ำเงิน */
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 18px;
+    position: relative;
+    padding: 5px 10px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+header nav ul li a:hover {
+    background-color: #ddd; /* สีเมื่อ hover */
+    transform: scale(1.1);
+}
+
+main {
+    padding: 20px;
+    background: #fff; /* สีพื้นหลังเป็นสีขาว */
+    border: 2px solid #bbb; /* ขอบสีเทาอ่อน */
+    margin: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2); /* เงาของ main section */
+}
+
+h1 {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 3rem;
+    color: #007bff; /* สีหัวเรื่องเป็นสีน้ำเงิน */
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+p {
+    font-size: 1.2rem;
+    color: #333; /* สีตัวอักษรเป็นสีเทาเข้ม */
+    margin-bottom: 20px;
+}
+
+footer {
+    background: #e0e0e0; /* สีพื้นหลังของ footer เป็นสีเทาอ่อน */
+    color: #007bff; /* สีตัวอักษรเป็นสีน้ำเงิน */
+    text-align: center;
+    padding: 15px;
+    font-size: 0.9rem;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+    border-top: 2px solid #bbb; /* เส้นขอบสีเทาอ่อน */
+}
+
+footer p {
+    margin: 0;
+}
+
+form {
+    background: #fff; /* พื้นหลังฟอร์มเป็นสีขาว */
+    padding: 20px;
+    border-radius: 10px;
+    border: 2px solid #bbb;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+}
+
+form label, form input, form textarea, form button {
+    display: block;
+    width: 100%;
+    margin-bottom: 10px;
+    padding: 10px;
+    font-size: 1rem;
+    background: #f9f9f9; /* พื้นหลังของ input และ textarea เป็นสีขาวอมเทา */
+    border: 1px solid #bbb;
+    color: #333; /* ตัวอักษรสีดำ */
+}
+
+form input, form textarea {
+    border-radius: 5px;
+}
+
+form button {
+    background-color: #007bff; /* ปุ่มเป็นสีน้ำเงิน */
+    color: #fff; /* ตัวอักษรในปุ่มเป็นสีขาว */
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+form button:hover {
+    background-color: #0056b3; /* ปุ่มเมื่อ hover */
+    transform: scale(1.1);
+}
+
+/* สไตล์สำหรับพื้นหลังที่มีลวดลายเหมือนโลหะ */
+body {
+    background: url('https://www.transparenttextures.com/patterns/steel-lattice.png'), #f4f4f4; /* เปลี่ยนพื้นหลังเป็นสีขาวและลวดลายโลหะ */
+    background-size: cover;
+}
+
+/* เพิ่มเงาบนเนื้อหาที่เหมือนกลไก */
+section {
+    background: #fff; /* พื้นหลังสีขาว */
+    padding: 20px;
+    border: 3px solid #bbb; /* เส้นขอบสีเทาอ่อน */
+    border-radius: 10px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+}
+
+h2 {
+    font-family: 'Courier New', Courier, monospace;
+    color: #007bff; /* สีหัวข้อเป็นสีน้ำเงิน */
+    margin-bottom: 15px;
+}
+
+a {
+    text-decoration: none;
+    color: #007bff; /* ลิงก์เป็นสีน้ำเงิน */
+    font-weight: bold;
+}
+
+a:hover {
+    color: #0056b3; /* ลิงก์เมื่อ hover เป็นสีน้ำเงินเข้ม */
+}
